@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lexend+Giga:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+    <div class="header">
+        <img src="./images/telephone_10637798.png" alt="Emoji de Telefone">
+    <header>
+        <h1>Agenda de Contatos</h1>
+    </header>
+    </div>
+    <div class="container">
+        <form id="form">
+        <ul>
+            <li>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Insira o nome" required><br>
+                <label for="telephone">Telefone:</label>
+                <input type="text" id="telephone" placeholder="(xx) x xxxx-xxxx" required maxlength="15"> <br>
+                <label for="favorite">Favorito:</label>
+                <input type="checkbox" id="favorite">
+                <img src="./images/star_8683815.png" alt="Estrela">
+            </li>
+        </ul>
+    </div>
+    <div class="button">
+        <button type="submit">Adicionar</button>
+        <button type="reset">Limpar</button>
+    </div>
+</form>
+    <div class="contacts">
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Ligar</th>
+            <th>Favorito</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>---</td>
+            <td>---</td>
+            <td><button id="call"><img src="./images/telephone_16290719 (1).png" alt="Telefone"></a></button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</main>
+
+<p id="contacts">Contatos:</p>
+<p id="favorites">Favoritos:</p>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="./main.js"></script>
+<script src="./telephones.js"></script>
+
+<footer>&copy; 2025 - Agenda de Contatos - Criado por Carolline Ramos</footer>
+</body>
+</html>
